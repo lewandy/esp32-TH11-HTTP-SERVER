@@ -1,4 +1,3 @@
-// Example testing sketch for various DHT humidity/temperature sensors written by ladyada
 // REQUIRES the following Arduino libraries:
 // - DHT Sensor Library: https://github.com/adafruit/DHT-sensor-library
 // - Adafruit Unified Sensor Lib: https://github.com/adafruit/Adafruit_Sensor
@@ -7,8 +6,8 @@
 #include <WiFi.h>
 
 // Replace with your network credentials
-const char* ssid = "Vue";
-const char* password = "ppox2127";
+const char* ssid = "WIFI_SSID";
+const char* password = "PASSWORD";
 
 // Set web server port number to 80
 WiFiServer server(80);
@@ -26,7 +25,7 @@ const long timeoutTime = 2000;
 #include "DHT.h"
 
 #define DHTPIN 4     // Digital pin connected to the DHT sensor
-// Feather HUZZAH ESP8266 note: use pins 3, 4, 5, 12, 13 or 14 --
+// Note: use pins 3, 4, 5, 12, 13 or 14 --
 // Pin 15 can work but DHT must be disconnected during program upload.
 
 // Uncomment whatever type you're using!
